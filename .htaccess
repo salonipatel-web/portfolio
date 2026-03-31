@@ -1,0 +1,23 @@
+# Protect .env file from being accessed via HTTP
+<FilesMatch "\.env$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Also protect other sensitive files
+<Files "telegram_debug.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "contact.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Enable HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

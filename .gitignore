@@ -1,0 +1,16 @@
+# Sensitive files
+.env
+.env.local
+.env.*.local
+telegram_debug.txt
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

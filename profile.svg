@@ -1,0 +1,16 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#3178c6"/>
+  
+  <!-- Circular border -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Head -->
+  <circle cx="200" cy="140" r="50" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Body/Shoulders -->
+  <ellipse cx="200" cy="280" rx="80" ry="60" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Initials -->
+  <text x="200" y="310" font-size="80" font-weight="bold" fill="#3178c6" text-anchor="middle" font-family="Arial, sans-serif">SP</text>
+</svg>
